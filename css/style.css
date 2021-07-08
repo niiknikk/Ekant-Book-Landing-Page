@@ -1,0 +1,91 @@
+body::-webkit-scrollbar {
+  width: 16px;
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #00ead3 #CFD8DC;
+}
+
+body::-webkit-scrollbar-track {
+  background: #CFD8DC;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #00ead3;
+  border-radius: 15px;
+  border: 3px solid #CFD8DC;
+}
+
+body {
+  margin-top: 50px;
+}
+
+.btn-outline-primary:hover {
+  color: #fff;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.navbar {
+  box-shadow: 2px 2px #00ead3;
+  opacity: 0.9;
+  background-color: #fff;
+}
+
+.navbar .nav-item {
+  font-size: 1.2rem;
+  padding-right: 1.4rem;
+}
+
+.navbar .navbar-toggler {
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.navbar-brand h3 {
+  font-style: italic;
+}
+
+.navbar .nav-link {
+  color: #333 !important;
+}
+
+.navbar .nav-link:hover {
+  color: #00ead3 !important;
+}
+
+.about-book.bg-primary-about {
+  background: linear-gradient(rgba(0, 234, 211, 0.9), rgba(0, 234, 211, 0.5));
+}
+
+.about-book-card-1 {
+  border-bottom: 3px solid #F67362;
+  box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-book-card-2 {
+  border-bottom: 3px solid #00ead3;
+  box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-book-card-3 {
+  border-bottom: 3px solid #BEA9FB;
+  box-shadow: 4px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-auther {
+  background-color: rgba(0, 234, 211, 0.8);
+}
+
+.book-feature .card:hover {
+  box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.book-feature-card-2 {
+  box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.1);
+}
+/*# sourceMappingURL=style.css.map */

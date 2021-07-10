@@ -54,6 +54,11 @@ body {
   color: #333 !important;
 }
 
+.navbar .nav-link.activelink{
+  color: #00ead3 !important;
+}
+
+
 .navbar .nav-link:hover {
   color: #00ead3 !important;
 }

@@ -14,7 +14,7 @@
 <body>
     
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
           <a class="navbar-brand m-0 p-0"  href="#" ><img src="/img/logo.png" alt="" width="40">
             <h3 class="d-inline align-middle text-mute font-italic">kant</h3>
@@ -24,23 +24,24 @@
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
+                <a class="nav-link activelink" data-id="home" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#category">Category</a>
+                <a class="nav-link" data-id="category"  href="#category">Category</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#aboutbook">About Book</a>
+                <a class="nav-link" data-id="aboutbook" href="#aboutbook">About Book</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#feature">Feature</a>
+                <a class="nav-link" data-id="feature" href="#feature">Feature</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#aboutauther">About Auther</a>
+                <a class="nav-link" data-id="aboutAuther" href="#aboutauther">About Auther</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link" data-id="contact href="#contact">Contact</a>
               </li>
         
           </div>
@@ -273,6 +274,21 @@
             offset: 300,
             duration: 1000,
         });
+                                                        
+                const body= document.querySelector('body');
+        const navlinks = document.querySelectorAll('.nav-link');
+
+    body.addEventListener('click', (e) => {
+    const id = e.target.dataset.id;
+    
+    if(id){
+        navlinks.forEach( (link) => {
+            link.classList.remove('activelink');
+            e.target.classList.add('activelink')
+        })
+       
+    }
+})                                                
     </script>
 </body>
 </html>
